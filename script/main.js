@@ -114,6 +114,14 @@ document.addEventListener("DOMContentLoaded",function () {
                 bannerImg.src = "data:image/png;base64," + dataImage;
             });
 
+            //bttn reaffichage
+            let bttnCharger = document.getElementById("charge");
+            bttnCharger.addEventListener("click",function () {
+                let dataImage = localStorage.getItem('dataImage');
+                let bannerImg = document.getElementById('test64image');
+                bannerImg.src = "data:image/png;base64," + dataImage;
+            });
+
         }
     });
 
@@ -257,7 +265,7 @@ document.addEventListener("DOMContentLoaded",function () {
     }
 
     // filter color
-    function imgCouleur(image,context, canv) {
+/*    function imgCouleur(image,context, canv) {
         if(context != null && canv != null){
             context.drawImage(image,0,0,image.width,image.height,0,0,
                 context.canv.width,context.canv.height);
@@ -266,7 +274,7 @@ document.addEventListener("DOMContentLoaded",function () {
         ctx.drawImage(image,0,0,image.width,image.height,0,0,
         ctx.canvas.width,ctx.canvas.height);
         }
-    }
+    }*/
 
     // negative filter
     function negativeFilter() {
