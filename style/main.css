@@ -1,0 +1,65 @@
+/*#scaleSlider{
+    vertical-align: 10px;
+    width: 100px;
+    margin-left: 90px;
+}*/
+h1{
+    text-align: center;
+}
+h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 13px;
+}
+#enregistrer{
+
+   margin-bottom: -100px;
+
+}
+#divPrincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+   border-style: solid;
+    /*  border-style: double;
+    border-style: groove;
+    border-style: ridge;
+    border-style: inset;
+    border-style: outset;*/
+}
+#canvas{
+    border: thin solid #aaaaaa;
+    cursor: crosshair;
+}
+
+#selectedImage{
+
+    margin-bottom: 10px;
+    margin-left: 13px;
+}
+
+#imagesDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*#divCanvas{
+    margin-left: 100px;
+}
+
+#controls{
+    margin-left: 15px;
+    padding:0;
+}
+
+#scaleOutput{
+
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+    vertical-align: center;
+    text-align: center;
+
+}*/
