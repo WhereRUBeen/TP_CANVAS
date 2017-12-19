@@ -114,15 +114,24 @@ document.addEventListener("DOMContentLoaded",function () {
                 bannerImg.src = "data:image/png;base64," + dataImage;
             });
 
-            //bttn reaffichage
-            let bttnCharger = document.getElementById("charge");
-            bttnCharger.addEventListener("click",function () {
-                let dataImage = localStorage.getItem('dataImage');
-                let bannerImg = document.getElementById('test64image');
-                bannerImg.src = "data:image/png;base64," + dataImage;
-            });
-
         }
+
+    });
+
+
+    //bttn reaffichage
+    let bttnCharger = document.getElementById("charge");
+    console.log(bttnCharger);
+    bttnCharger.addEventListener("click",function () {
+        console.log("hello");
+        //let dataImage = localStorage.getItem('dataImage');
+        //let bannerImg = document.getElementById('test64image');
+        //if(dataImage != null){
+
+            //bannerImg.setAttribute("src",dataImage); //src = "data:image/png;base64," + dataImage;
+        //}
+
+
     });
 
 
@@ -219,7 +228,7 @@ document.addEventListener("DOMContentLoaded",function () {
         }catch (e){
             console.log("Strorage faled : " + e);
         }
-
+        return data.replace(/^data:image\/(png|jpg);base64,/, "");
 
     }
 // function
